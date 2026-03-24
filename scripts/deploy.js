@@ -9,7 +9,7 @@
  * 
  * 1. Environment variables:
  *    VIBESHARING_PROTOTYPE_ID
- *    VIBESHARING_DEPLOY_TOKEN
+ *    VIBESHARING_DEPLOY_TOKEN (or VIBESHARING_TOKEN)
  * 
  * 2. Project config (vibesharing.json):
  *    { "prototypeId": "...", "deployToken": "..." }
