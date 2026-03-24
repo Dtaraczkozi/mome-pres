@@ -118,7 +118,11 @@ async function main() {
   }
 
   // Get deploy token (check project, then global, then env)
-  const deployToken = projectConfig.deployToken || globalConfig.deployToken || process.env.VIBESHARING_DEPLOY_TOKEN;
+  const deployToken =
+    projectConfig.deployToken ||
+    globalConfig.deployToken ||
+    process.env.VIBESHARING_DEPLOY_TOKEN ||
+    process.env.VIBESHARING_TOKEN;
   if (!deployToken) {
     console.error('\n✗ No deploy token found!');
     console.error('\nOption 1: Add to ~/.vibesharing/config.json (recommended):');
